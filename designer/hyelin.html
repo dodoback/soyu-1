@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이소유</title>
+  <link rel="stylesheet" href="../common/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* 다혜 디자이너 소개 섹션 */
+.designer-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 260px;
+  height: 324px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.profile-text p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+</style>
+<body>
+  <header class="header">
+    <a href="../index.html">
+      <div class="logo">이터널 리턴</div>
+    </a>
+    <div id="menuToggle" class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+  <nav id="sideMenu" class="side-menu">
+    <div class="menu-header">
+      <span onclick="toggleMenu()">✕</span>
+    </div>
+    <ul>
+      <li><a href="dahye.html">이소유1</a></li>
+      <li><a href="hyelin.html">이소유2</a></li>
+      <li><a href="gaeul.html">이소유3</a></li>
+      <li><a href="sua.html"> 이소유4</a></li>
+      <li><a href="yena.html"> 이소유5</a></li>
+      <li><a href="suin.html"> 이소유6</a></li>
+      <li><a href="seonu.html">이소유7 </a></li>
+      <li><a href="yeli.html"> 이소유8</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <!-- 👇 다혜 디자이너 소개 섹션 추가 -->
+  <section class="designer-profile">
+    <img src="../images/dahye/1.png" alt="다혜 디자이너 프로필" class="profile-photo" />
+    <div class="profile-text">
+      <h2>이터널 리턴</h2>
+      <p>
+        소유 바보 똥꼬
+      </p>
+    </div>
+  </section>
+    <h1 class="section-title">이소유 이소유</h1>
+    <div id="gallery-container"></div>
+    <div id="pagination" class="pagination"></div>
+  </main>
+  
+ <!-- 전체화면 이미지 팝업 -->
+  <div id="fullscreenOverlay" class="fullscreen-overlay">
+    <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+    <img id="fullscreenImage" src="" alt="전체 사진">
+    <div id="fullscreenDescription" class="fullscreen-description"></div>
+  </div>
+
+
+  
+  <script src="../common/js/menu.js"></script>
+  <script src="../common/js/gallery-dahye.js"></script>
+</body>
+</html>
